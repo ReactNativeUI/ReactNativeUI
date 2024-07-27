@@ -1,0 +1,11 @@
+{
+  "author": "dallasclark <dallasjclark@gmail.com>",
+  "description": "UI Library for React Native",
+  "license": "MIT",
+  "name": "reactnativeui",
+  "repository": "git@github.com:reactnativeui/react-native-ui.git",
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "0.0.1"
+}

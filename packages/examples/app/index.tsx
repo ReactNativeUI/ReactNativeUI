@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Text, View } from "react-native";
 
 export default function Index() {
@@ -8,6 +9,8 @@ export default function Index() {
       }}
     >
       <Text>React Native UI Examples</Text>
+
+      <Text>Use the top-left navigation bar to browse components.</Text>
     </View>
   );
 }

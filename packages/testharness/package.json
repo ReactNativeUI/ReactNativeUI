@@ -2,5 +2,6 @@
   "description": "Test Harness for React Native UI Library",
   "license": "MIT",
   "name": "testharness",
+  "private": true,
   "version": "0.0.1"
 }

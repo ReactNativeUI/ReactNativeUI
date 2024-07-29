@@ -2,7 +2,7 @@
   "author": "dallasclark <dallasjclark@gmail.com>",
   "description": "UI Library for React Native",
   "license": "MIT",
-  "name": "reactnativeui",
+  "name": "reactnativeui-root",
   "private": true,
   "repository": "git@github.com:reactnativeui/react-native-ui.git",
   "workspaces": [

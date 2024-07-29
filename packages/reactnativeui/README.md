@@ -10,7 +10,6 @@ npm install reactnativeui
 
 ## Usage
 
-
 ```js
 import { multiply } from 'reactnativeui';
 
@@ -18,7 +17,6 @@ import { multiply } from 'reactnativeui';
 
 const result = await multiply(3, 7);
 ```
-
 
 ## Contributing
 

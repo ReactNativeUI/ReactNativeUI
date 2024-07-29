@@ -1,6 +1,6 @@
-import { View } from "react-native";
+import { View } from 'react-native';
 
-import { Text } from "reactnativeui";
+import { Text } from 'reactnativeui';
 
 export default function Typography() {
   return (

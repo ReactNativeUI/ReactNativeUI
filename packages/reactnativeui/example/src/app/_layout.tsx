@@ -1,5 +1,5 @@
-import { GestureHandlerRootView } from "react-native-gesture-handler";
-import { Drawer } from "expo-router/drawer";
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { Drawer } from 'expo-router/drawer';
 
 export default function App() {
   return (
@@ -8,8 +8,8 @@ export default function App() {
         <Drawer.Screen
           name="index"
           options={{
-            drawerLabel: "Home",
-            title: "Home",
+            drawerLabel: 'Home',
+            title: 'Home',
           }}
         />
       </Drawer>

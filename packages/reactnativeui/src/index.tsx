@@ -1,7 +1,5 @@
-import * as Components from "./components";
+import * as Components from './components';
 
 const Text = Components.Text;
 
-export { 
-  Text
-};
+export { Text };

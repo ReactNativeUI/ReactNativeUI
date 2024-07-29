@@ -9,7 +9,8 @@ export default function Typography() {
         flex: 1,
       }}
     >
-      <Text></Text>
+      <Text>Testing</Text>
+      <Text>Testing</Text>
     </View>
   );
 }

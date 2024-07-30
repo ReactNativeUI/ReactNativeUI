@@ -1,5 +1,6 @@
 import * as COLOURS from './colours';
+import * as MARGINS from './margins';
+import * as PADDINGS from './paddings';
 import * as TYPOGRAPHY from './typography';
-import * as VARIABLES from './variables';
 
-export { COLOURS, TYPOGRAPHY, VARIABLES };
+export { COLOURS, MARGINS, PADDINGS, TYPOGRAPHY };

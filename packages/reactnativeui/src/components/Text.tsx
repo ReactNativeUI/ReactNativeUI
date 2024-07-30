@@ -1,6 +1,6 @@
-import { StyleSheet, Text as RNText } from 'react-native';
+import { StyleSheet, Text as RNText, View as RNView } from 'react-native';
 
-import { COLOURS, MARGINS, TYPOGRAPHY } from '../config';
+import { COLOURS, MARGINS, PADDINGS, TYPOGRAPHY } from '../config';
 
 export function Text({
   bold,
@@ -18,6 +18,8 @@ export function Text({
 
   return <RNText style={_styles}>{children}</RNText>;
 }
+
+// Headings
 
 export function H1({
   children,
@@ -79,7 +81,35 @@ export function H6({
   return <RNText style={[styles.h6, style]}>{children}</RNText>;
 }
 
+// Blockquotes
+
+export function Blockquote({ children }: { children: React.ReactNode }) {
+  return (
+    <RNView style={styles.blockquote}>
+      <RNText style={styles.blockquoteText}>{children}</RNText>
+    </RNView>
+  );
+}
+
 const styles = StyleSheet.create({
+  // Blockquotes
+
+  blockquote: {
+    marginBottom: MARGINS.MARGIN_BASE,
+    paddingBottom: PADDINGS.PADDING_SMALL,
+    paddingTop: PADDINGS.PADDING_SMALL,
+
+    borderLeftColor: COLOURS.GREY_LIGHT,
+    borderLeftWidth: 4,
+    paddingLeft: PADDINGS.PADDING_MEDIUM,
+  },
+
+  blockquoteText: {
+    fontSize: TYPOGRAPHY.BLOCKQUOTE_FONT_SIZE,
+  },
+
+  // Headings
+
   h1: {
     marginBottom: MARGINS.MARGIN_BASE * 0.5,
 
@@ -122,6 +152,8 @@ const styles = StyleSheet.create({
     fontSize: TYPOGRAPHY.H6_FONT_SIZE,
     fontWeight: 500,
   },
+
+  // Text
 
   text: {
     marginBottom: MARGINS.MARGIN_BASE,

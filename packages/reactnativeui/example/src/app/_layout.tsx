@@ -4,7 +4,7 @@ import { Drawer } from 'expo-router/drawer';
 export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <Drawer initialRouteName="index">
+      <Drawer>
         <Drawer.Screen
           name="index"
           options={{

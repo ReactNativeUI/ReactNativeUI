@@ -12,6 +12,14 @@ export default function App() {
             title: 'Home',
           }}
         />
+
+        <Drawer.Screen
+          name="typography"
+          options={{
+            drawerLabel: 'Typography',
+            title: 'Typography',
+          }}
+        />
       </Drawer>
     </GestureHandlerRootView>
   );

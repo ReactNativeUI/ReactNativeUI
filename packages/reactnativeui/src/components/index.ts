@@ -1,3 +1,3 @@
-import Text from './Text';
+import Text, { H1 } from './Text';
 
-export { Text };
+export { H1, Text };

@@ -1,6 +1,6 @@
 import { View } from 'react-native';
 
-import { Text } from 'reactnativeui';
+import { H1, Text } from 'reactnativeui';
 
 export default function Typography() {
   return (
@@ -9,7 +9,7 @@ export default function Typography() {
         flex: 1,
       }}
     >
-      <Text>Testing</Text>
+      <H1>Typography</H1>
       <Text>Testing</Text>
     </View>
   );

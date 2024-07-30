@@ -1,6 +1,6 @@
 // import { useEffect, useState } from "react";
-import { Text, View } from 'react-native';
-// import { multiply } from 'reactnativeui';
+import { View } from 'react-native';
+import { H1, Text } from 'reactnativeui';
 
 export default function Index() {
   // const [result, setResult] = useState<number | undefined>();
@@ -15,7 +15,7 @@ export default function Index() {
         flex: 1,
       }}
     >
-      <Text>React Native UI Examples</Text>
+      <H1>React Native UI Examples</H1>
 
       <Text>Use the top-left navigation bar to browse components.</Text>
       {/* 

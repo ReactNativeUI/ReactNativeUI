@@ -25,6 +25,6 @@ export function Image({
 const styles = StyleSheet.create({
   image: {
     marginBottom: MARGINS.MARGIN_BASE,
-    width: 'auto',
+    width: '100%',
   },
 });

@@ -36,7 +36,9 @@ export default function Typography() {
             document. Wrap &lt;Blockquote&gt; around the text.
           </Text>
           <ExampleView>
-            <Blockquote>This is an example blockquote.</Blockquote>
+            <Blockquote author="Someone famous">
+              This is an example blockquote.
+            </Blockquote>
           </ExampleView>
         </View>
       </ScrollView>

@@ -83,10 +83,17 @@ export function H6({
 
 // Blockquotes
 
-export function Blockquote({ children }: { children: React.ReactNode }) {
+export function Blockquote({
+  author,
+  children,
+}: {
+  author?: string;
+  children: string;
+}) {
   return (
     <RNView style={styles.blockquote}>
       <RNText style={styles.blockquoteText}>{children}</RNText>
+      {author && <RNText style={styles.blockquoteAuthor}>— {author}</RNText>}
     </RNView>
   );
 }
@@ -102,6 +109,10 @@ const styles = StyleSheet.create({
     borderLeftColor: COLOURS.GREY_LIGHT,
     borderLeftWidth: 4,
     paddingLeft: PADDINGS.PADDING_MEDIUM,
+  },
+
+  blockquoteAuthor: {
+    color: COLOURS.GREY,
   },
 
   blockquoteText: {

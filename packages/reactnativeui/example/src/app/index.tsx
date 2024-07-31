@@ -1,4 +1,4 @@
-import { SafeAreaView, ScrollView } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import { H1, Text, View } from 'reactnativeui';
 
 export default function Index() {

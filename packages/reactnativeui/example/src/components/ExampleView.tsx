@@ -6,10 +6,10 @@ export function ExampleView({ children }: { children: React.ReactNode }) {
 
 const styles = StyleSheet.create({
   view: {
-    marginBottom: 10,
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingTop: 10,
+    marginBottom: 16,
+    paddingLeft: 16,
+    paddingRight: 16,
+    paddingTop: 16,
 
     backgroundColor: '#FFFFFF',
     borderColor: '#DEE2E6',

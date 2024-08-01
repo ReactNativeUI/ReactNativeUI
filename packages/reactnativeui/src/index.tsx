@@ -11,6 +11,9 @@ export const {
   Image,
   ImageGallery,
   ImageThumbnail,
+  Table,
+  TableRow,
+  TableRows,
   Text,
   View,
 } = Components;

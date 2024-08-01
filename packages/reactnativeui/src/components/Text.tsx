@@ -106,13 +106,13 @@ const styles = StyleSheet.create({
     paddingBottom: PADDINGS.PADDING_SMALL,
     paddingTop: PADDINGS.PADDING_SMALL,
 
-    borderLeftColor: COLOURS.GREY_LIGHT,
+    borderLeftColor: COLOURS.GRAY_200,
     borderLeftWidth: 4,
     paddingLeft: PADDINGS.PADDING_MEDIUM,
   },
 
   blockquoteAuthor: {
-    color: COLOURS.GREY,
+    color: COLOURS.GRAY_400,
   },
 
   blockquoteText: {

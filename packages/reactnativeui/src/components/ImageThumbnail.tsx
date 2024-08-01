@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     marginRight: MARGINS.MARGIN_BASE,
     padding: 4,
 
-    borderColor: COLOURS.GREY_LIGHT,
+    borderColor: COLOURS.GRAY_200,
     borderRadius: 2,
     borderWidth: 1,
   },

@@ -28,6 +28,14 @@ export default function App() {
             title: 'Images',
           }}
         />
+
+        <Drawer.Screen
+          name="tables"
+          options={{
+            drawerLabel: 'Tables',
+            title: 'Tables',
+          }}
+        />
       </Drawer>
     </GestureHandlerRootView>
   );

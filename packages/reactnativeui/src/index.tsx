@@ -9,6 +9,7 @@ export const {
   H5,
   H6,
   Image,
+  ImageGallery,
   ImageThumbnail,
   Text,
   View,

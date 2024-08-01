@@ -1,5 +1,13 @@
 import { SafeAreaView, ScrollView } from 'react-native';
-import { H1, H2, Image, ImageThumbnail, Text, View } from 'reactnativeui';
+import {
+  H1,
+  H2,
+  Image,
+  ImageGallery,
+  ImageThumbnail,
+  Text,
+  View,
+} from 'reactnativeui';
 
 import { ExampleView } from '../components';
 
@@ -26,16 +34,28 @@ export default function Images() {
               source={require('../../assets/icon.png')}
               width={100}
             />
-            <ImageThumbnail
-              height={100}
-              source={require('../../assets/icon.png')}
-              width={100}
-            />
-            <ImageThumbnail
-              height={100}
-              source={require('../../assets/icon.png')}
-              width={100}
-            />
+          </ExampleView>
+
+          <H2>Image Gallery</H2>
+          <Text>A gallery of images.</Text>
+          <ExampleView>
+            <ImageGallery>
+              <ImageThumbnail
+                height={100}
+                source={require('../../assets/icon.png')}
+                width={100}
+              />
+              <ImageThumbnail
+                height={100}
+                source={require('../../assets/icon.png')}
+                width={100}
+              />
+              <ImageThumbnail
+                height={100}
+                source={require('../../assets/icon.png')}
+                width={100}
+              />
+            </ImageGallery>
           </ExampleView>
         </View>
       </ScrollView>

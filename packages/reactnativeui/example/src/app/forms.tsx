@@ -43,6 +43,7 @@ export default function Forms() {
             <FormTextInput
               keyboardType="email-address"
               onChangeText={setOverviewEmail}
+              placeholder="name@example.com"
               value={overviewEmail}
             />
             <FormText>This is some example help text.</FormText>
@@ -50,6 +51,8 @@ export default function Forms() {
             <FormLabel>Password:</FormLabel>
             <FormTextInput
               onChangeText={setOverviewPassword}
+              placeholder="P@$$w0rd"
+              secureTextEntry
               value={overviewPassword}
             />
             <FormText>This is some example help text.</FormText>
@@ -58,6 +61,7 @@ export default function Forms() {
             <FormTextInput
               keyboardType="numeric"
               onChangeText={setOverviewPhone}
+              placeholder="1234567890"
               value={overviewPhone}
             />
             <FormText>This is some example help text.</FormText>

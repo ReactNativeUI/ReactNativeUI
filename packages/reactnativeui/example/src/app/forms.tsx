@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { SafeAreaView, ScrollView } from 'react-native';
 import {
-  Button,
   FormLabel,
   FormText,
   FormTextInput,
   H1,
   H2,
+  PressableTextButton,
   Text,
   View,
 } from 'reactnativeui';
@@ -17,6 +17,10 @@ export default function Forms() {
   const [overviewEmail, setOverviewEmail] = useState('');
   const [overviewPassword, setOverviewPassword] = useState('');
   const [overviewPhone, setOverviewPhone] = useState('');
+
+  function _onPress() {
+    console.log('Pressed');
+  }
 
   return (
     <SafeAreaView>
@@ -58,7 +62,11 @@ export default function Forms() {
             />
             <FormText>This is some example help text.</FormText>
 
-            <Button title="Submit" variant="primary" />
+            <PressableTextButton
+              onPress={_onPress}
+              title="Submit"
+              variant="primary"
+            />
           </ExampleView>
         </View>
       </ScrollView>

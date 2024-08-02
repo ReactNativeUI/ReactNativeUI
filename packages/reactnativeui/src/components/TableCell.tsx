@@ -81,6 +81,8 @@ const styles = StyleSheet.create({
     fontWeight: 700,
   },
 
+  // Variants
+
   tableCellPrimary: {
     backgroundColor: COLOURS.TABLE_PRIMARY_BACKGROUND,
   },

@@ -52,6 +52,14 @@ export default function App() {
             title: 'Buttons',
           }}
         />
+
+        <Drawer.Screen
+          name="pressable-text-buttons"
+          options={{
+            drawerLabel: 'Pressable Text Buttons',
+            title: 'Pressable Text Buttons',
+          }}
+        />
       </Drawer>
     </GestureHandlerRootView>
   );

@@ -16,6 +16,7 @@ export const {
   Image,
   ImageGallery,
   ImageThumbnail,
+  PressableTextButton,
   Table,
   TableRow,
   TableRows,

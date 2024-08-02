@@ -4,6 +4,10 @@ export const TEXT_FONT_SIZE_BASE: number = 16;
 
 export const BLOCKQUOTE_FONT_SIZE: number = TEXT_FONT_SIZE_BASE * 1.2;
 
+// Buttons
+
+export const BUTTON_FONT_SIZE: number = TEXT_FONT_SIZE_BASE;
+
 // Code
 
 export const CODE_FONT_SIZE: number = TEXT_FONT_SIZE_BASE;

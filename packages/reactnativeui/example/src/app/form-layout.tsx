@@ -42,7 +42,6 @@ export default function FormLayout() {
                   keyboardType="email-address"
                   placeholder="name@example.com"
                 />
-                <FormText>This is some example help text.</FormText>
               </RNView>
 
               <RNView style={styles.column}>
@@ -51,7 +50,6 @@ export default function FormLayout() {
                   keyboardType="numeric"
                   placeholder="1234567890"
                 />
-                <FormText>This is some example help text.</FormText>
               </RNView>
             </RNView>
           </ExampleView>

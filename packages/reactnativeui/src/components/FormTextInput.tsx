@@ -10,7 +10,7 @@ import type {
   ViewStyle as RNViewStyle,
 } from 'react-native';
 
-import { COLOURS, MARGINS, PADDINGS, TYPOGRAPHY } from '../config';
+import { BORDERS, COLOURS, MARGINS, PADDINGS, TYPOGRAPHY } from '../config';
 
 export function FormTextInput({
   containerStyle,
@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     paddingTop: PADDINGS.PADDING_SMALL,
 
     borderColor: COLOURS.GRAY_400,
+    borderRadius: BORDERS.BORDER_RADIUS_SMALL,
     borderWidth: 1,
     fontSize: TYPOGRAPHY.TEXT_INPUT_FONT_SIZE,
     lineHeight: TYPOGRAPHY.TEXT_INPUT_FONT_SIZE * 1.2,

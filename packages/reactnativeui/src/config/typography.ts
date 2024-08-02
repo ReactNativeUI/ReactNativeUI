@@ -3,6 +3,7 @@ export const TEXT_FONT_SIZE_BASE: number = 16;
 // Alerts
 
 export const ALERT_FONT_SIZE: number = TEXT_FONT_SIZE_BASE;
+export const ALERT_HEADING_FONT_SIZE: number = TEXT_FONT_SIZE_BASE * 1.5;
 
 // Blockquotes
 

@@ -66,6 +66,16 @@ export default function Alerts() {
               variant="primary"
             />
           </ExampleView>
+
+          <H2>Additional content</H2>
+          <Text>Alerts can also contain other elements like headings.</Text>
+          <ExampleView>
+            <Alert
+              heading="Successful alert heading!"
+              text="You successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content."
+              variant="success"
+            />
+          </ExampleView>
         </Container>
       </ScrollView>
     </SafeAreaView>

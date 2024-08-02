@@ -9,9 +9,11 @@ import type {
 import { ButtonClose } from './ButtonClose';
 import { BORDERS, COLOURS, MARGINS, PADDINGS, TYPOGRAPHY } from '../config';
 import type { Variant } from '../types';
+import { H4 } from './Text';
 
 export function Alert({
   alertStyle,
+  heading,
   showCloseButton = false,
   setVisible,
   text,
@@ -20,6 +22,7 @@ export function Alert({
   visible = true,
 }: RNViewProps & {
   alertStyle?: RNStyleProp<RNViewStyle>;
+  heading?: string;
   setVisible?: (visible: boolean) => void;
   showCloseButton?: boolean;
   text: string;
@@ -85,7 +88,11 @@ export function Alert({
     <>
       {visible && (
         <RNView style={_alertStyles}>
-          <RNText style={_textStyles}>{text}</RNText>
+          <RNView style={styles.textContainer}>
+            {heading && <H4 variant={variant}>{heading}</H4>}
+            <RNText style={_textStyles}>{text}</RNText>
+          </RNView>
+
           {showCloseButton && (
             <RNView style={styles.closeButtonContainer}>
               <ButtonClose onPress={() => setVisible && setVisible(false)} />
@@ -107,8 +114,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
 
-  text: {
+  textContainer: {
     flex: 1,
+  },
+
+  text: {
     fontSize: TYPOGRAPHY.ALERT_FONT_SIZE,
   },
 

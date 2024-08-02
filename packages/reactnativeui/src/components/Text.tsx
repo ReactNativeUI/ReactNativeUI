@@ -1,85 +1,7 @@
 import { StyleSheet, Text as RNText, View as RNView } from 'react-native';
 
 import { COLOURS, MARGINS, PADDINGS, TYPOGRAPHY } from '../config';
-
-export function Text({
-  bold,
-  children,
-  style,
-}: {
-  bold?: boolean;
-  children: React.ReactNode;
-  style?: any;
-}) {
-  const _styles = [styles.text, style];
-  if (bold === true) {
-    _styles.push(styles.textBold);
-  }
-
-  return <RNText style={_styles}>{children}</RNText>;
-}
-
-// Headings
-
-export function H1({
-  children,
-  style,
-}: {
-  children: React.ReactNode;
-  style?: any;
-}) {
-  return <RNText style={[styles.h1, style]}>{children}</RNText>;
-}
-
-export function H2({
-  children,
-  style,
-}: {
-  children: React.ReactNode;
-  style?: any;
-}) {
-  return <RNText style={[styles.h2, style]}>{children}</RNText>;
-}
-
-export function H3({
-  children,
-  style,
-}: {
-  children: React.ReactNode;
-  style?: any;
-}) {
-  return <RNText style={[styles.h3, style]}>{children}</RNText>;
-}
-
-export function H4({
-  children,
-  style,
-}: {
-  children: React.ReactNode;
-  style?: any;
-}) {
-  return <RNText style={[styles.h4, style]}>{children}</RNText>;
-}
-
-export function H5({
-  children,
-  style,
-}: {
-  children: React.ReactNode;
-  style?: any;
-}) {
-  return <RNText style={[styles.h5, style]}>{children}</RNText>;
-}
-
-export function H6({
-  children,
-  style,
-}: {
-  children: React.ReactNode;
-  style?: any;
-}) {
-  return <RNText style={[styles.h6, style]}>{children}</RNText>;
-}
+import type { Variant } from '../types';
 
 // Blockquotes
 
@@ -96,6 +18,120 @@ export function Blockquote({
       {author && <RNText style={styles.blockquoteAuthor}>— {author}</RNText>}
     </RNView>
   );
+}
+
+// Headings
+
+export function H1({
+  children,
+  ...props
+}: {
+  children: React.ReactNode;
+  variant?: Variant;
+}) {
+  return (
+    <Text heading="h1" {...props}>
+      {children}
+    </Text>
+  );
+}
+export function H2({
+  children,
+  ...props
+}: {
+  children: React.ReactNode;
+  variant?: Variant;
+}) {
+  return (
+    <Text heading="h2" {...props}>
+      {children}
+    </Text>
+  );
+}
+export function H3({
+  children,
+  ...props
+}: {
+  children: React.ReactNode;
+  variant?: Variant;
+}) {
+  return (
+    <Text heading="h3" {...props}>
+      {children}
+    </Text>
+  );
+}
+export function H4({
+  children,
+  ...props
+}: {
+  children: React.ReactNode;
+  variant?: Variant;
+}) {
+  return (
+    <Text heading="h4" {...props}>
+      {children}
+    </Text>
+  );
+}
+export function H5({
+  children,
+  ...props
+}: {
+  children: React.ReactNode;
+  variant?: Variant;
+}) {
+  return (
+    <Text heading="h5" {...props}>
+      {children}
+    </Text>
+  );
+}
+export function H6({
+  children,
+  ...props
+}: {
+  children: React.ReactNode;
+  variant?: Variant;
+}) {
+  return (
+    <Text heading="h6" {...props}>
+      {children}
+    </Text>
+  );
+}
+
+export function Text({
+  bold,
+  children,
+  heading,
+  style,
+  variant,
+}: {
+  bold?: boolean;
+  children: React.ReactNode;
+  heading?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+  style?: any;
+  variant?: Variant;
+}) {
+  const _styles = [styles.text, style];
+
+  // Headings
+  if (heading) {
+    _styles.push(styles[heading]);
+  }
+
+  // Bold
+  if (bold === true) {
+    _styles.push(styles.textBold);
+  }
+
+  // Variant
+  if (variant) {
+    _styles.push(styles[variant]);
+  }
+
+  return <RNText style={_styles}>{children}</RNText>;
 }
 
 const styles = StyleSheet.create({
@@ -117,6 +153,17 @@ const styles = StyleSheet.create({
 
   blockquoteText: {
     fontSize: TYPOGRAPHY.BLOCKQUOTE_FONT_SIZE,
+  },
+
+  text: {
+    marginBottom: MARGINS.MARGIN_BASE,
+
+    color: COLOURS.BLACK,
+    fontSize: TYPOGRAPHY.TEXT_FONT_SIZE_BASE,
+  },
+
+  textBold: {
+    fontWeight: 700,
   },
 
   // Headings
@@ -164,16 +211,41 @@ const styles = StyleSheet.create({
     fontWeight: 500,
   },
 
-  // Text
+  // Variants
 
-  text: {
-    marginBottom: MARGINS.MARGIN_BASE,
-
-    color: COLOURS.BLACK,
-    fontSize: TYPOGRAPHY.TEXT_FONT_SIZE_BASE,
+  default: {
+    color: COLOURS.DEFAULT_TEXT_EMPHASIS,
   },
 
-  textBold: {
-    fontWeight: 700,
+  primary: {
+    color: COLOURS.PRIMARY_TEXT_EMPHASIS,
+  },
+
+  secondary: {
+    color: COLOURS.SECONDARY_TEXT_EMPHASIS,
+  },
+
+  success: {
+    color: COLOURS.SUCCESS_TEXT_EMPHASIS,
+  },
+
+  danger: {
+    color: COLOURS.DANGER_TEXT_EMPHASIS,
+  },
+
+  warning: {
+    color: COLOURS.WARNING_TEXT_EMPHASIS,
+  },
+
+  info: {
+    color: COLOURS.INFO_TEXT_EMPHASIS,
+  },
+
+  light: {
+    color: COLOURS.LIGHT_TEXT_EMPHASIS,
+  },
+
+  dark: {
+    color: COLOURS.DARK_TEXT_EMPHASIS,
   },
 });

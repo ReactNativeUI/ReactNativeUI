@@ -1,9 +1,19 @@
+import { useState } from 'react';
 import { SafeAreaView, ScrollView } from 'react-native';
-import { Alert, Container, H1, H2, Text } from 'reactnativeui';
+import {
+  Alert,
+  Container,
+  H1,
+  H2,
+  PressableTextButton,
+  Text,
+} from 'reactnativeui';
 
 import { ExampleView } from '../components';
 
 export default function Alerts() {
+  const [alertVisible, setAlertVisible] = useState(false);
+
   return (
     <SafeAreaView>
       <ScrollView>
@@ -24,10 +34,8 @@ export default function Alerts() {
             <Alert text="A simple default alert." />
           </ExampleView>
 
-          <H2>Examples</H2>
-          <Text>
-            For proper styling, use one of the eight contextual classes.
-          </Text>
+          <H2>Variants</H2>
+          <Text>For proper styling, use one of the eight variants.</Text>
           <ExampleView>
             <Alert text="A simple primary alert." variant="primary" />
             <Alert text="A simple secondary alert." variant="secondary" />
@@ -37,6 +45,26 @@ export default function Alerts() {
             <Alert text="A simple info alert." variant="info" />
             <Alert text="A simple light alert." variant="light" />
             <Alert text="A simple dark alert." variant="dark" />
+          </ExampleView>
+
+          <H2>Show and hide alerts</H2>
+          <Text>
+            Click the button below to show an alert, then dismiss it using the
+            built-in close button.
+          </Text>
+          <ExampleView>
+            <Alert
+              showCloseButton
+              setVisible={setAlertVisible}
+              text="You triggered this alert with a very long message!"
+              variant="success"
+              visible={alertVisible}
+            />
+            <PressableTextButton
+              onPress={() => setAlertVisible(true)}
+              title="Show alert"
+              variant="primary"
+            />
           </ExampleView>
         </Container>
       </ScrollView>

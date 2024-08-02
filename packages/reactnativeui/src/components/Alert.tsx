@@ -6,24 +6,31 @@ import type {
   ViewStyle as RNViewStyle,
 } from 'react-native';
 
+import { ButtonClose } from './ButtonClose';
 import { BORDERS, COLOURS, MARGINS, PADDINGS, TYPOGRAPHY } from '../config';
 import type { Variant } from '../types';
 
 export function Alert({
   alertStyle,
+  showCloseButton = false,
+  setVisible,
   text,
   textStyle,
   variant = 'default',
+  visible = true,
 }: RNViewProps & {
   alertStyle?: RNStyleProp<RNViewStyle>;
+  setVisible?: (visible: boolean) => void;
+  showCloseButton?: boolean;
   text: string;
   textStyle?: RNStyleProp<RNTextStyle>;
   variant?: Variant;
+  visible?: boolean;
 }) {
-  // Alert
+  // Alert styles
   const _alertStyles = [styles.alert, alertStyle];
 
-  // Text
+  // Text styles
   const _textStyles = [styles.text, textStyle];
 
   // Variants
@@ -73,15 +80,26 @@ export function Alert({
       _textStyles.push(styles.alertTextDark);
       break;
   }
+
   return (
-    <RNView style={_alertStyles}>
-      <RNText style={_textStyles}>{text}</RNText>
-    </RNView>
+    <>
+      {visible && (
+        <RNView style={_alertStyles}>
+          <RNText style={_textStyles}>{text}</RNText>
+          {showCloseButton && (
+            <RNView style={styles.closeButtonContainer}>
+              <ButtonClose onPress={() => setVisible && setVisible(false)} />
+            </RNView>
+          )}
+        </RNView>
+      )}
+    </>
   );
 }
 
 const styles = StyleSheet.create({
   alert: {
+    flexDirection: 'row',
     marginBottom: MARGINS.MARGIN_BASE,
     padding: PADDINGS.PADDING_BASE,
 
@@ -90,7 +108,15 @@ const styles = StyleSheet.create({
   },
 
   text: {
+    flex: 1,
     fontSize: TYPOGRAPHY.ALERT_FONT_SIZE,
+  },
+
+  // Close button
+
+  closeButtonContainer: {
+    alignItems: 'flex-end',
+    flexBasis: 40,
   },
 
   // Variants

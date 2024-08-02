@@ -1,9 +1,14 @@
-import { SafeAreaView, ScrollView } from 'react-native';
+import { Alert, SafeAreaView, ScrollView } from 'react-native';
 import { Button, H1, H2, Text, View } from 'reactnativeui';
 
 import { ExampleView } from '../components';
 
 export default function Buttons() {
+  function _onPress() {
+    console.log('Button Pressed');
+    Alert.alert('React Native UI', `Button Pressed`);
+  }
+
   return (
     <SafeAreaView>
       <ScrollView>
@@ -21,7 +26,7 @@ export default function Buttons() {
             margin, padding, and content alignment.
           </Text>
           <ExampleView>
-            <Button title="Button" />
+            <Button onPress={_onPress} title="Button" />
           </ExampleView>
 
           <H2>Variants</H2>
@@ -31,14 +36,14 @@ export default function Buttons() {
             danger.
           </Text>
           <ExampleView>
-            <Button title="Primary" variant="primary" />
-            <Button title="Secondary" variant="secondary" />
-            <Button title="Success" variant="success" />
-            <Button title="Danger" variant="danger" />
-            <Button title="Warning" variant="warning" />
-            <Button title="Info" variant="info" />
-            <Button title="Light" variant="light" />
-            <Button title="Dark" variant="dark" />
+            <Button onPress={_onPress} title="Primary" variant="primary" />
+            <Button onPress={_onPress} title="Secondary" variant="secondary" />
+            <Button onPress={_onPress} title="Success" variant="success" />
+            <Button onPress={_onPress} title="Danger" variant="danger" />
+            <Button onPress={_onPress} title="Warning" variant="warning" />
+            <Button onPress={_onPress} title="Info" variant="info" />
+            <Button onPress={_onPress} title="Light" variant="light" />
+            <Button onPress={_onPress} title="Dark" variant="dark" />
           </ExampleView>
         </View>
       </ScrollView>

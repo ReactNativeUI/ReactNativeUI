@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { SafeAreaView, ScrollView } from 'react-native';
+import { Alert, SafeAreaView, ScrollView } from 'react-native';
 import {
   FormLabel,
   FormText,
@@ -19,7 +19,11 @@ export default function Forms() {
   const [overviewPhone, setOverviewPhone] = useState('');
 
   function _onPress() {
-    console.log('Pressed');
+    console.log('Submit Pressed');
+    Alert.alert(
+      'Submit Pressed',
+      `Email: ${overviewEmail}\nPassword: ${overviewPassword}\nPhone: ${overviewPhone}`
+    );
   }
 
   return (

@@ -1,11 +1,12 @@
-import { SafeAreaView, ScrollView } from 'react-native';
+import { Alert, SafeAreaView, ScrollView } from 'react-native';
 import { H1, H2, PressableTextButton, Text, View } from 'reactnativeui';
 
 import { ExampleView } from '../components';
 
 export default function PressableTextPressableTextButtons() {
   function _onPress() {
-    console.log('Pressed');
+    console.log('Pressable Text Button Pressed');
+    Alert.alert('React Native UI', `Pressable Text Button Pressed`);
   }
 
   return (

@@ -1,4 +1,5 @@
 import { Alert } from './Alert';
+import { Blockquote } from './Blockquote';
 import { Button } from './Button';
 import { Code } from './Code';
 import { Container } from './Container';
@@ -11,7 +12,7 @@ import { ImageThumbnail } from './ImageThumbnail';
 import { PressableTextButton } from './PressableTextButton';
 import { Table } from './Table';
 import { TableRow, TableRows } from './TableRow';
-import { Blockquote, H1, H2, H3, H4, H5, H6, Text } from './Text';
+import { H1, H2, H3, H4, H5, H6, Text } from './Text';
 
 export {
   Alert,

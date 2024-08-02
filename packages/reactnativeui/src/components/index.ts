@@ -1,4 +1,7 @@
 import { Code } from './Code';
+import { FormLabel } from './FormLabel';
+import { FormText } from './FormText';
+import { FormTextInput } from './FormTextInput';
 import { Image } from './Image';
 import { ImageGallery } from './ImageGallery';
 import { ImageThumbnail } from './ImageThumbnail';
@@ -10,6 +13,9 @@ import { View } from './View';
 export {
   Blockquote,
   Code,
+  FormLabel,
+  FormText,
+  FormTextInput,
   H1,
   H2,
   H3,

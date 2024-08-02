@@ -36,6 +36,14 @@ export default function App() {
             title: 'Tables',
           }}
         />
+
+        <Drawer.Screen
+          name="forms"
+          options={{
+            drawerLabel: 'Forms',
+            title: 'Forms',
+          }}
+        />
       </Drawer>
     </GestureHandlerRootView>
   );

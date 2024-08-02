@@ -3,6 +3,9 @@ import * as Components from './components';
 export const {
   Blockquote,
   Code,
+  FormLabel,
+  FormText,
+  FormTextInput,
   H1,
   H2,
   H3,

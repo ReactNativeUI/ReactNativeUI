@@ -1,3 +1,4 @@
+import { Code } from './Code';
 import { Image } from './Image';
 import { ImageGallery } from './ImageGallery';
 import { ImageThumbnail } from './ImageThumbnail';
@@ -8,6 +9,7 @@ import { View } from './View';
 
 export {
   Blockquote,
+  Code,
   H1,
   H2,
   H3,

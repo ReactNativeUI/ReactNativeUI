@@ -2,6 +2,7 @@ import * as Components from './components';
 
 export const {
   Blockquote,
+  Code,
   H1,
   H2,
   H3,

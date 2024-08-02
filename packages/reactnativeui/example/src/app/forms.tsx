@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { SafeAreaView, ScrollView } from 'react-native';
 import {
+  Button,
   FormLabel,
   FormText,
   FormTextInput,
@@ -56,6 +57,8 @@ export default function Forms() {
               value={overviewPhone}
             />
             <FormText>This is some example help text.</FormText>
+
+            <Button title="Submit" variant="primary" />
           </ExampleView>
         </View>
       </ScrollView>

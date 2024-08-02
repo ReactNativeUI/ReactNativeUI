@@ -1,3 +1,4 @@
+import { Button } from './Button';
 import { Code } from './Code';
 import { FormLabel } from './FormLabel';
 import { FormText } from './FormText';
@@ -12,6 +13,7 @@ import { View } from './View';
 
 export {
   Blockquote,
+  Button,
   Code,
   FormLabel,
   FormText,

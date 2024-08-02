@@ -1,6 +1,7 @@
 import { StyleSheet, View as RNView } from 'react-native';
 
-import { TableCell, type TableCellVariant } from './TableCell';
+import type { Variant } from '../types';
+import { TableCell } from './TableCell';
 
 export function TableRow({
   data,
@@ -12,7 +13,7 @@ export function TableRow({
   data: (number | string)[];
   heading?: boolean;
   style?: any;
-  variant?: TableCellVariant;
+  variant?: Variant;
   widthArray: (number | string)[];
 }) {
   return (

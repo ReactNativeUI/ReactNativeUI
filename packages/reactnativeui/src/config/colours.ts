@@ -24,6 +24,7 @@ export const YELLOW: string = '#ffc107';
 
 // Variants
 
+export const DEFAULT: string = BLACK;
 export const PRIMARY: string = BLUE;
 export const SECONDARY: string = GRAY_600;
 export const SUCCESS: string = GREEN;

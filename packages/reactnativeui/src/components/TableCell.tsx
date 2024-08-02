@@ -1,17 +1,7 @@
 import { StyleSheet, Text as RNText, View as RNView } from 'react-native';
 
 import { COLOURS, PADDINGS } from '../config';
-
-export type TableCellVariant =
-  | 'default'
-  | 'primary'
-  | 'secondary'
-  | 'success'
-  | 'danger'
-  | 'warning'
-  | 'info'
-  | 'light'
-  | 'dark';
+import type { Variant } from '../types';
 
 export function TableCell({
   cellStyle,
@@ -24,13 +14,13 @@ export function TableCell({
   data: number | string;
   heading?: boolean;
   textStyle?: any;
-  variant?: TableCellVariant;
+  variant?: Variant;
 }) {
   // Cell
   const _cellStyles = [styles.tableCell, cellStyle];
-  const _textStyles = [textStyle];
 
   // Text
+  const _textStyles = [textStyle];
   if (heading === true) {
     _textStyles.push(styles.tableCellTextHeading);
   }

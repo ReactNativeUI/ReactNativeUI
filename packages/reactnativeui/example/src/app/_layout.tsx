@@ -44,6 +44,14 @@ export default function App() {
             title: 'Forms',
           }}
         />
+
+        <Drawer.Screen
+          name="buttons"
+          options={{
+            drawerLabel: 'Buttons',
+            title: 'Buttons',
+          }}
+        />
       </Drawer>
     </GestureHandlerRootView>
   );

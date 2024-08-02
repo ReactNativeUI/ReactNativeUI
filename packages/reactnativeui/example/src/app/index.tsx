@@ -1,6 +1,6 @@
-import { Button, SafeAreaView } from 'react-native';
+import { SafeAreaView } from 'react-native';
 import { DrawerActions } from '@react-navigation/native';
-import { Code, H1, H2, Text, View } from 'reactnativeui';
+import { Button, Code, H1, H2, Text, View } from 'reactnativeui';
 import { useNavigation } from 'expo-router';
 
 export default function Index() {

@@ -53,11 +53,16 @@ export default function Typography() {
           </ExampleView>
 
           <H2>Code</H2>
-          <Text>lorem ipsum dolor</Text>
+          <Text>
+            Wrap code snippets of code with &lt;Code&gt;. Be sure to insert the
+            code as text.
+          </Text>
           <ExampleView>
             <Code>
-              {`import { Button } from "reactnativeui";`}
-              {`import { Button } from "reactnativeui";`}
+              {`import { Button } from "@reactnativeui/reactnativeui";`}
+              {'\n'}
+              {'\n'}
+              {`console.log('Hello, world! :)');`}
             </Code>
           </ExampleView>
         </View>

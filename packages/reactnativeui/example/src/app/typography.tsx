@@ -1,5 +1,16 @@
 import { SafeAreaView, ScrollView } from 'react-native';
-import { Blockquote, H1, H2, H3, H4, H5, H6, Text, View } from 'reactnativeui';
+import {
+  Blockquote,
+  Code,
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  H6,
+  Text,
+  View,
+} from 'reactnativeui';
 
 import { ExampleView } from '../components';
 
@@ -39,6 +50,15 @@ export default function Typography() {
             <Blockquote author="Someone famous">
               This is an example blockquote.
             </Blockquote>
+          </ExampleView>
+
+          <H2>Code</H2>
+          <Text>lorem ipsum dolor</Text>
+          <ExampleView>
+            <Code>
+              {`import { Button } from "reactnativeui";`}
+              {`import { Button } from "reactnativeui";`}
+            </Code>
           </ExampleView>
         </View>
       </ScrollView>

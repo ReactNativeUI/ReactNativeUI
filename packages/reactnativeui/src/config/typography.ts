@@ -4,6 +4,11 @@ export const TEXT_FONT_SIZE_BASE: number = 16;
 
 export const BLOCKQUOTE_FONT_SIZE: number = TEXT_FONT_SIZE_BASE * 1.2;
 
+// Code
+
+export const CODE_FONT_SIZE: number = TEXT_FONT_SIZE_BASE;
+export const CODE_LINE_HEIGHT: number = CODE_FONT_SIZE * 1.2;
+
 // Headings
 
 export const H1_FONT_SIZE: number = TEXT_FONT_SIZE_BASE * 2.5;

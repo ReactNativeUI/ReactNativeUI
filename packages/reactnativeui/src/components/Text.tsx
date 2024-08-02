@@ -170,6 +170,7 @@ const styles = StyleSheet.create({
     marginBottom: MARGINS.MARGIN_BASE,
 
     color: COLOURS.BLACK,
+    fontSize: TYPOGRAPHY.TEXT_FONT_SIZE_BASE,
   },
 
   textBold: {

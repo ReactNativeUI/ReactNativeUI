@@ -1,7 +1,11 @@
+/**
+ * @todo This component works well for a single line. Need to support multiple lines without requiring the user to insert newline characters (\n).
+ */
+
 import { StyleSheet, Text as RNText, View as RNView } from 'react-native';
 import type { StyleProp, TextStyle, ViewStyle } from 'react-native';
 
-import { COLOURS, MARGINS, PADDINGS } from '../config';
+import { COLOURS, MARGINS, PADDINGS, TYPOGRAPHY } from '../config';
 
 export function Code({
   children,
@@ -33,5 +37,7 @@ const styles = StyleSheet.create({
   text: {
     color: COLOURS.BLACK,
     fontFamily: 'Courier',
+    fontSize: TYPOGRAPHY.CODE_FONT_SIZE,
+    lineHeight: TYPOGRAPHY.CODE_LINE_HEIGHT,
   },
 });

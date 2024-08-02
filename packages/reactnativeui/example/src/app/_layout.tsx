@@ -46,6 +46,14 @@ export default function App() {
         />
 
         <Drawer.Screen
+          name="form-layout"
+          options={{
+            drawerLabel: 'Form Layout',
+            title: 'Form Layout',
+          }}
+        />
+
+        <Drawer.Screen
           name="buttons"
           options={{
             drawerLabel: 'Buttons',

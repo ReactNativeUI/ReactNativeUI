@@ -1,5 +1,13 @@
 import { SafeAreaView, ScrollView } from 'react-native';
-import { H1, H2, Table, TableRow, TableRows, Text, View } from 'reactnativeui';
+import {
+  Container,
+  H1,
+  H2,
+  Table,
+  TableRow,
+  TableRows,
+  Text,
+} from 'reactnativeui';
 
 import { ExampleView } from '../components';
 
@@ -30,7 +38,7 @@ export default function Tables() {
   return (
     <SafeAreaView>
       <ScrollView>
-        <View>
+        <Container>
           <H1>Tables</H1>
 
           <H2>Basic</H2>
@@ -107,7 +115,7 @@ export default function Tables() {
               />
             </Table>
           </ExampleView>
-        </View>
+        </Container>
       </ScrollView>
     </SafeAreaView>
   );

@@ -1,13 +1,17 @@
 import { StyleSheet, View as RNView } from 'react-native';
+import type {
+  StyleProp as RNStyleProp,
+  ViewStyle as RNViewStyle,
+} from 'react-native';
 
 import { MARGINS } from '../config';
 
-export function View({
+export function Container({
   children,
   style,
 }: {
   children: React.ReactNode;
-  style?: any;
+  style?: RNStyleProp<RNViewStyle>;
 }) {
   return <RNView style={[styles.view, style]}>{children}</RNView>;
 }

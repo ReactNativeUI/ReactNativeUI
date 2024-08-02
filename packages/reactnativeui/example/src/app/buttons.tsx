@@ -1,5 +1,5 @@
 import { Alert, SafeAreaView, ScrollView } from 'react-native';
-import { Button, H1, H2, Text, View } from 'reactnativeui';
+import { Button, Container, H1, H2, Text } from 'reactnativeui';
 
 import { ExampleView } from '../components';
 
@@ -12,7 +12,7 @@ export default function Buttons() {
   return (
     <SafeAreaView>
       <ScrollView>
-        <View>
+        <Container>
           <H1>Buttons</H1>
 
           <Text>
@@ -45,7 +45,7 @@ export default function Buttons() {
             <Button onPress={_onPress} title="Light" variant="light" />
             <Button onPress={_onPress} title="Dark" variant="dark" />
           </ExampleView>
-        </View>
+        </Container>
       </ScrollView>
     </SafeAreaView>
   );

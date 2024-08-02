@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Alert, SafeAreaView, ScrollView } from 'react-native';
 import {
+  Container,
   FormLabel,
   FormText,
   FormTextInput,
@@ -8,7 +9,6 @@ import {
   H2,
   PressableTextButton,
   Text,
-  View,
 } from 'reactnativeui';
 
 import { ExampleView } from '../components';
@@ -29,7 +29,7 @@ export default function Forms() {
   return (
     <SafeAreaView>
       <ScrollView>
-        <View>
+        <Container>
           <H1>Forms</H1>
 
           <Text>
@@ -76,7 +76,7 @@ export default function Forms() {
               variant="primary"
             />
           </ExampleView>
-        </View>
+        </Container>
       </ScrollView>
     </SafeAreaView>
   );

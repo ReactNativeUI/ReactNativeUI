@@ -4,6 +4,7 @@ export const {
   Blockquote,
   Button,
   Code,
+  Container,
   FormLabel,
   FormText,
   FormTextInput,
@@ -21,5 +22,4 @@ export const {
   TableRow,
   TableRows,
   Text,
-  View,
 } = Components;

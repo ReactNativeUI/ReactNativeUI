@@ -1,5 +1,6 @@
 import { Button } from './Button';
 import { Code } from './Code';
+import { Container } from './Container';
 import { FormLabel } from './FormLabel';
 import { FormText } from './FormText';
 import { FormTextInput } from './FormTextInput';
@@ -10,12 +11,12 @@ import { PressableTextButton } from './PressableTextButton';
 import { Table } from './Table';
 import { TableRow, TableRows } from './TableRow';
 import { Blockquote, H1, H2, H3, H4, H5, H6, Text } from './Text';
-import { View } from './View';
 
 export {
   Blockquote,
   Button,
   Code,
+  Container,
   FormLabel,
   FormText,
   FormTextInput,
@@ -33,5 +34,4 @@ export {
   TableRow,
   TableRows,
   Text,
-  View,
 };

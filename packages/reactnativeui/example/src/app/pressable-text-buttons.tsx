@@ -1,5 +1,5 @@
 import { Alert, SafeAreaView, ScrollView } from 'react-native';
-import { H1, H2, PressableTextButton, Text, View } from 'reactnativeui';
+import { Container, H1, H2, PressableTextButton, Text } from 'reactnativeui';
 
 import { ExampleView } from '../components';
 
@@ -12,7 +12,7 @@ export default function PressableTextPressableTextButtons() {
   return (
     <SafeAreaView>
       <ScrollView>
-        <View>
+        <Container>
           <H1>Pressable Text Buttons</H1>
 
           <Text>
@@ -78,7 +78,7 @@ export default function PressableTextPressableTextButtons() {
               variant="dark"
             />
           </ExampleView>
-        </View>
+        </Container>
       </ScrollView>
     </SafeAreaView>
   );

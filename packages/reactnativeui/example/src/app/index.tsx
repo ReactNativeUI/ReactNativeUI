@@ -1,6 +1,13 @@
 import { SafeAreaView } from 'react-native';
 import { DrawerActions } from '@react-navigation/native';
-import { Button, Code, H1, H2, Text, View } from 'reactnativeui';
+import {
+  Code,
+  Container,
+  H1,
+  H2,
+  PressableTextButton,
+  Text,
+} from 'reactnativeui';
 import { useNavigation } from 'expo-router';
 
 export default function Index() {
@@ -8,7 +15,7 @@ export default function Index() {
 
   return (
     <SafeAreaView>
-      <View>
+      <Container>
         <H1>React Native UI</H1>
 
         <H2>Build fast, easy mobile UIs with React Native UI.</H2>
@@ -24,13 +31,14 @@ export default function Index() {
 
         <Code>$ npm i @reactnativeui/reactnativeui</Code>
 
-        <Button
+        <PressableTextButton
           onPress={() => {
             navigation.dispatch(DrawerActions.openDrawer());
           }}
           title="View Components"
+          variant="primary"
         />
-      </View>
+      </Container>
     </SafeAreaView>
   );
 }

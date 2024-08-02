@@ -2,6 +2,7 @@ import { SafeAreaView, ScrollView } from 'react-native';
 import {
   Blockquote,
   Code,
+  Container,
   H1,
   H2,
   H3,
@@ -9,7 +10,6 @@ import {
   H5,
   H6,
   Text,
-  View,
 } from 'reactnativeui';
 
 import { ExampleView } from '../components';
@@ -18,7 +18,7 @@ export default function Typography() {
   return (
     <SafeAreaView>
       <ScrollView>
-        <View>
+        <Container>
           <H1>Typography</H1>
 
           <H2>Headings</H2>
@@ -65,7 +65,7 @@ export default function Typography() {
               {`console.log('Hello, world! :)');`}
             </Code>
           </ExampleView>
-        </View>
+        </Container>
       </ScrollView>
     </SafeAreaView>
   );

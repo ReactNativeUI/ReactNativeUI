@@ -1,3 +1,4 @@
+import { Alert } from './Alert';
 import { Button } from './Button';
 import { Code } from './Code';
 import { Container } from './Container';
@@ -13,6 +14,7 @@ import { TableRow, TableRows } from './TableRow';
 import { Blockquote, H1, H2, H3, H4, H5, H6, Text } from './Text';
 
 export {
+  Alert,
   Blockquote,
   Button,
   Code,

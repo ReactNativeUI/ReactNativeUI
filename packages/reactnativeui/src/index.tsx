@@ -1,6 +1,7 @@
 import * as Components from './components';
 
 export const {
+  Alert,
   Blockquote,
   Button,
   Code,

@@ -54,6 +54,14 @@ export default function App() {
         />
 
         <Drawer.Screen
+          name="alerts"
+          options={{
+            drawerLabel: 'Alerts',
+            title: 'Alerts',
+          }}
+        />
+
+        <Drawer.Screen
           name="buttons"
           options={{
             drawerLabel: 'Buttons',

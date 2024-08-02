@@ -18,7 +18,7 @@ export function Button({
   title: string;
   variant?: Variant;
 }) {
-  let color = COLOURS.PRIMARY;
+  let color = COLOURS.DEFAULT;
   switch (variant) {
     case 'default':
       color = COLOURS.DEFAULT;

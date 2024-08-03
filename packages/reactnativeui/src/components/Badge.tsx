@@ -11,12 +11,14 @@ import type { Variant } from '../types';
 
 export function Badge({
   badgeStyle,
+  pill,
   text,
   textStyle,
   uppercase,
   variant = 'default',
 }: RNViewProps & {
   badgeStyle?: RNStyleProp<RNViewStyle>;
+  pill?: boolean;
   text: string;
   textStyle?: RNStyleProp<RNTextStyle>;
   uppercase?: boolean;
@@ -76,6 +78,11 @@ export function Badge({
       break;
   }
 
+  // Pill
+  if (pill) {
+    _badgeStyles.push(styles.badgePill);
+  }
+
   // Uppercase
   if (uppercase) {
     _textStyles.push(styles.textUppercase);
@@ -96,6 +103,10 @@ const styles = StyleSheet.create({
     padding: PADDINGS.PADDING_SMALL,
 
     borderRadius: BORDERS.BORDER_RADIUS_BASE,
+  },
+
+  badgePill: {
+    borderRadius: BORDERS.BORDER_RADIUS_LARGE,
   },
 
   text: {

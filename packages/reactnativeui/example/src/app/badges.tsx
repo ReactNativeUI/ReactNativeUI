@@ -47,6 +47,24 @@ export default function Badges() {
               <Badge text="Dark" uppercase variant="dark" />
             </View>
           </ExampleView>
+
+          <H2>Pill badges</H2>
+          <Text>
+            Use the pill attribute to make badges more rounded with a larger
+            border-radius.
+          </Text>
+          <ExampleView>
+            <View style={styles.variantsContainer}>
+              <Badge text="Primary" pill variant="primary" />
+              <Badge text="Secondary" pill variant="secondary" />
+              <Badge text="Success" pill variant="success" />
+              <Badge text="Danger" pill variant="danger" />
+              <Badge text="Warning" pill variant="warning" />
+              <Badge text="Info" pill variant="info" />
+              <Badge text="Light" pill variant="light" />
+              <Badge text="Dark" pill variant="dark" />
+            </View>
+          </ExampleView>
         </Container>
       </ScrollView>
     </SafeAreaView>

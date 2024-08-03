@@ -1,3 +1,5 @@
+import type { TextStyle } from 'react-native';
+
 export const TEXT_FONT_SIZE_BASE: number = 16;
 
 // Alerts
@@ -8,7 +10,7 @@ export const ALERT_HEADING_FONT_SIZE: number = TEXT_FONT_SIZE_BASE * 1.5;
 // Badges
 
 export const BADGE_FONT_SIZE: number = TEXT_FONT_SIZE_BASE * 0.75;
-export const BADGE_FONT_WEIGHT: number = 600;
+export const BADGE_FONT_WEIGHT: TextStyle['fontWeight'] = 600;
 
 // Blockquotes
 

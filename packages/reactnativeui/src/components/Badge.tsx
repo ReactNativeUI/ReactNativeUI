@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
 
   text: {
     fontSize: TYPOGRAPHY.BADGE_FONT_SIZE,
-    fontWeight: 600,
+    fontWeight: TYPOGRAPHY.BADGE_FONT_WEIGHT,
   },
 
   textUppercase: {

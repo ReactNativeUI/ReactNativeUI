@@ -3,6 +3,7 @@ import { Badge } from './Badge';
 import { Blockquote } from './Blockquote';
 import { Breadcrumbs } from './Breadcrumbs';
 import { Button } from './Button';
+import { ButtonGroup } from './ButtonGroup';
 import { Code } from './Code';
 import { Container } from './Container';
 import { FormLabel } from './FormLabel';
@@ -22,6 +23,7 @@ export {
   Blockquote,
   Breadcrumbs,
   Button,
+  ButtonGroup,
   Code,
   Container,
   FormLabel,

@@ -6,6 +6,7 @@ export const {
   Blockquote,
   Breadcrumbs,
   Button,
+  ButtonGroup,
   Code,
   Container,
   FormLabel,

@@ -86,6 +86,14 @@ export default function App() {
         />
 
         <Drawer.Screen
+          name="button-groups"
+          options={{
+            drawerLabel: 'Button Groups',
+            title: 'Button Groups',
+          }}
+        />
+
+        <Drawer.Screen
           name="pressable-text-buttons"
           options={{
             drawerLabel: 'Pressable Text Buttons',

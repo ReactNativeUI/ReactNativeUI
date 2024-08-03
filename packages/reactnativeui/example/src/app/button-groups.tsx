@@ -55,6 +55,30 @@ const mixedButtons: Element[] = [
   />,
 ];
 
+const verticalButtons: Element[] = [
+  <Button
+    containerStyle={{ marginBottom: 0 }}
+    key={`button-1`}
+    onPress={() => _onPress('Top')}
+    title="Top"
+    variant="primary"
+  />,
+  <Button
+    containerStyle={{ marginBottom: 0 }}
+    key={`button-2`}
+    onPress={() => _onPress('Middle')}
+    title="Middle"
+    variant="primary"
+  />,
+  <Button
+    containerStyle={{ marginBottom: 0 }}
+    key={`button-3`}
+    onPress={() => _onPress('Bottom')}
+    title="Bottom"
+    variant="primary"
+  />,
+];
+
 export default function Badges() {
   return (
     <SafeAreaView>
@@ -82,7 +106,7 @@ export default function Badges() {
             horizontally.
           </Text>
           <ExampleView>
-            <ButtonGroup buttons={basicButtons} direction="column" />
+            <ButtonGroup buttons={verticalButtons} direction="column" />
           </ExampleView>
         </Container>
       </ScrollView>

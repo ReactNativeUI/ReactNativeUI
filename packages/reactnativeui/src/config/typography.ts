@@ -5,6 +5,11 @@ export const TEXT_FONT_SIZE_BASE: number = 16;
 export const ALERT_FONT_SIZE: number = TEXT_FONT_SIZE_BASE;
 export const ALERT_HEADING_FONT_SIZE: number = TEXT_FONT_SIZE_BASE * 1.5;
 
+// Badges
+
+export const BADGE_FONT_SIZE: number = TEXT_FONT_SIZE_BASE * 0.75;
+export const BADGE_FONT_WEIGHT: number = 600;
+
 // Blockquotes
 
 export const BLOCKQUOTE_FONT_SIZE: number = TEXT_FONT_SIZE_BASE * 1.2;

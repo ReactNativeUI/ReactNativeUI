@@ -134,6 +134,35 @@ export const ALERT_DARK_BACKGROUND: string = DARK_BACKGROUND_SUBTLE;
 export const ALERT_DARK_BORDER: string = DARK_BORDER_SUBTLE;
 export const ALERT_TEXT_DARK: string = DARK_TEXT_EMPHASIS;
 
+// Badges
+
+export const BADGE_DEFAULT_BACKGROUND: string = WHITE;
+export const BADGE_TEXT_DEFAULT: string = BLACK;
+
+export const BADGE_PRIMARY_BACKGROUND: string = PRIMARY;
+export const BADGE_TEXT_PRIMARY: string = WHITE;
+
+export const BADGE_SECONDARY_BACKGROUND: string = SECONDARY;
+export const BADGE_TEXT_SECONDARY: string = WHITE;
+
+export const BADGE_SUCCESS_BACKGROUND: string = SUCCESS;
+export const BADGE_TEXT_SUCCESS: string = WHITE;
+
+export const BADGE_DANGER_BACKGROUND: string = DANGER;
+export const BADGE_TEXT_DANGER: string = WHITE;
+
+export const BADGE_WARNING_BACKGROUND: string = WARNING;
+export const BADGE_TEXT_WARNING: string = BLACK;
+
+export const BADGE_INFO_BACKGROUND: string = INFO;
+export const BADGE_TEXT_INFO: string = BLACK;
+
+export const BADGE_LIGHT_BACKGROUND: string = LIGHT;
+export const BADGE_TEXT_LIGHT: string = BLACK;
+
+export const BADGE_DARK_BACKGROUND: string = DARK;
+export const BADGE_TEXT_DARK: string = WHITE;
+
 // Tables
 
 export const TABLE_PRIMARY_BACKGROUND: string = tintColour(PRIMARY, WHITE, 0.8);

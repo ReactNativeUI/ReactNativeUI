@@ -2,6 +2,7 @@ import * as Components from './components';
 
 export const {
   Alert,
+  Badge,
   Blockquote,
   Button,
   Code,

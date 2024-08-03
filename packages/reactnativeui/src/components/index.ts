@@ -1,4 +1,5 @@
 import { Alert } from './Alert';
+import { Badge } from './Badge';
 import { Blockquote } from './Blockquote';
 import { Button } from './Button';
 import { Code } from './Code';
@@ -16,6 +17,7 @@ import { H1, H2, H3, H4, H5, H6, Text } from './Text';
 
 export {
   Alert,
+  Badge,
   Blockquote,
   Button,
   Code,

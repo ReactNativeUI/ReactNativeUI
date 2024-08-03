@@ -62,6 +62,14 @@ export default function App() {
         />
 
         <Drawer.Screen
+          name="badges"
+          options={{
+            drawerLabel: 'Badges',
+            title: 'Badges',
+          }}
+        />
+
+        <Drawer.Screen
           name="buttons"
           options={{
             drawerLabel: 'Buttons',

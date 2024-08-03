@@ -1,3 +1,4 @@
 import type { Variant } from './variants';
+import type { Breadcrumb, Breadcrumbs } from './breadcrumbs';
 
-export type { Variant };
+export type { Breadcrumb, Breadcrumbs, Variant };

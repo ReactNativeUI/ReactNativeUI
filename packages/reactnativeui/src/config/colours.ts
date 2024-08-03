@@ -163,6 +163,12 @@ export const BADGE_TEXT_LIGHT: string = BLACK;
 export const BADGE_DARK_BACKGROUND: string = DARK;
 export const BADGE_TEXT_DARK: string = WHITE;
 
+// Breadcrumbs
+
+export const BREADCRUMB_TEXT_COLOR: string = PRIMARY;
+export const BREADCRUMB_ACTIVE_TEXT_COLOR: string = BLACK;
+export const BREADCRUMB_SEPARATOR_COLOR: string = GRAY_600;
+
 // Tables
 
 export const TABLE_PRIMARY_BACKGROUND: string = tintColour(PRIMARY, WHITE, 0.8);

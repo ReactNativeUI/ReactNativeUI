@@ -23,11 +23,11 @@ const styles = StyleSheet.create({
   blockquote: {
     marginBottom: MARGINS.MARGIN_BASE,
     paddingBottom: PADDINGS.PADDING_SMALL,
+    paddingLeft: PADDINGS.PADDING_MEDIUM,
     paddingTop: PADDINGS.PADDING_SMALL,
 
     borderLeftColor: COLOURS.GRAY_200,
     borderLeftWidth: 4,
-    paddingLeft: PADDINGS.PADDING_MEDIUM,
   },
 
   blockquoteAuthor: {

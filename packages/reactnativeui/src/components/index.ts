@@ -1,6 +1,7 @@
 import { Alert } from './Alert';
 import { Badge } from './Badge';
 import { Blockquote } from './Blockquote';
+import { Breadcrumbs } from './Breadcrumbs';
 import { Button } from './Button';
 import { Code } from './Code';
 import { Container } from './Container';
@@ -19,6 +20,7 @@ export {
   Alert,
   Badge,
   Blockquote,
+  Breadcrumbs,
   Button,
   Code,
   Container,

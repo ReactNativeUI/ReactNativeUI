@@ -16,6 +16,10 @@ export const BADGE_FONT_WEIGHT: TextStyle['fontWeight'] = 600;
 
 export const BLOCKQUOTE_FONT_SIZE: number = TEXT_FONT_SIZE_BASE * 1.2;
 
+// Breadcrumbs
+
+export const BREADCRUMB_FONT_SIZE: number = TEXT_FONT_SIZE_BASE;
+
 // Buttons
 
 export const BUTTON_FONT_SIZE: number = TEXT_FONT_SIZE_BASE;

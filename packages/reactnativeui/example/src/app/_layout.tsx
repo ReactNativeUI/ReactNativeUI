@@ -70,6 +70,14 @@ export default function App() {
         />
 
         <Drawer.Screen
+          name="breadcrumbs"
+          options={{
+            drawerLabel: 'Breadcrumbs',
+            title: 'Breadcrumbs',
+          }}
+        />
+
+        <Drawer.Screen
           name="buttons"
           options={{
             drawerLabel: 'Buttons',

@@ -4,6 +4,7 @@ export const {
   Alert,
   Badge,
   Blockquote,
+  Breadcrumbs,
   Button,
   Code,
   Container,

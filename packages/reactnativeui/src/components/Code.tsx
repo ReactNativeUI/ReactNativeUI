@@ -5,7 +5,7 @@
 import { StyleSheet, Text as RNText, View as RNView } from 'react-native';
 import type { StyleProp, TextStyle, ViewStyle } from 'react-native';
 
-import { COLOURS, MARGINS, PADDINGS, TYPOGRAPHY } from '../config';
+import { BORDERS, COLOURS, MARGINS, PADDINGS, TYPOGRAPHY } from '../config';
 
 export function Code({
   children,
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
 
     backgroundColor: COLOURS.GRAY_200,
     borderColor: COLOURS.GRAY_400,
-    borderRadius: 10,
+    borderRadius: BORDERS.BORDER_RADIUS_BASE,
     borderWidth: 1,
   },
 

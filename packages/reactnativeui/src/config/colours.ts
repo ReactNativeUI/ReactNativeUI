@@ -169,6 +169,10 @@ export const BREADCRUMB_TEXT_COLOR: string = PRIMARY;
 export const BREADCRUMB_ACTIVE_TEXT_COLOR: string = BLACK;
 export const BREADCRUMB_SEPARATOR_COLOR: string = GRAY_600;
 
+// Cards
+
+export const CARD_BORDER_COLOR: string = GRAY_200;
+
 // Tables
 
 export const TABLE_PRIMARY_BACKGROUND: string = tintColour(PRIMARY, WHITE, 0.8);

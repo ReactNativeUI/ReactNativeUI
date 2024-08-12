@@ -94,6 +94,14 @@ export default function App() {
         />
 
         <Drawer.Screen
+          name="cards"
+          options={{
+            drawerLabel: 'Cards',
+            title: 'Cards',
+          }}
+        />
+
+        <Drawer.Screen
           name="pressable-text-buttons"
           options={{
             drawerLabel: 'Pressable Text Buttons',

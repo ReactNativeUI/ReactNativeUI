@@ -4,6 +4,7 @@ import { Blockquote } from './Blockquote';
 import { Breadcrumbs } from './Breadcrumbs';
 import { Button } from './Button';
 import { ButtonGroup } from './ButtonGroup';
+import { Card } from './Card';
 import { Code } from './Code';
 import { Container } from './Container';
 import { FormLabel } from './FormLabel';
@@ -24,6 +25,7 @@ export {
   Breadcrumbs,
   Button,
   ButtonGroup,
+  Card,
   Code,
   Container,
   FormLabel,

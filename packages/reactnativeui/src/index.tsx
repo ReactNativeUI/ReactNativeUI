@@ -7,6 +7,7 @@ export const {
   Breadcrumbs,
   Button,
   ButtonGroup,
+  Card,
   Code,
   Container,
   FormLabel,

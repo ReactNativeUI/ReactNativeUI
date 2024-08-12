@@ -21,9 +21,10 @@ export function ButtonGroup({
 
   return (
     <RNView style={_styles}>
-      {buttons.map((button, index) => ({
-        ...button,
-      })) // @todo manipulate the <Button /> here to remove marginBottom
+      {
+        buttons.map((button, index) => ({
+          ...button,
+        })) // @todo manipulate the <Button /> here to remove marginBottom
       }
     </RNView>
   );
@@ -38,5 +39,6 @@ const styles = StyleSheet.create({
 
   buttonGroupFlexDirectionColumn: {
     flexDirection: 'column',
+    flexWrap: 'nowrap',
   },
 });

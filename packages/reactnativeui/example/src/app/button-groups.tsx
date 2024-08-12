@@ -100,6 +100,15 @@ export default function Badges() {
             <ButtonGroup buttons={mixedButtons} />
           </ExampleView>
 
+          <H2>Center alignment</H2>
+          <Text>Use additional props to center the buttons.</Text>
+          <ExampleView>
+            <ButtonGroup
+              buttons={basicButtons}
+              style={{ justifyContent: 'center' }}
+            />
+          </ExampleView>
+
           <H2>Vertical variation</H2>
           <Text>
             Make a set of buttons appear veritically stacked rather than
